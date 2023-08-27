@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Lato:wght@300&family=Pacifico&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,
+a,
+button {
+    color: #4A90E2
+}
