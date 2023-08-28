@@ -16,7 +16,10 @@ body{
 h1, 
 h2,
 h3{
-    font-family: 'Pacifico', cursive;
+    font-family: 'Crafty Girls', cursive;
+}
+h1{
+    font-size: 130%;
 }
 .invisible{
     display: none;
@@ -41,11 +44,23 @@ header{
 
 header a{
     text-decoration: none;
+    color: #FAF3E0;
 }
 
 header a:hover{
     color: #F5C542;
 }
+
+#navbar {
+    font-size: 100%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+#navbar>li {
+    margin-bottom: 1em;
+}
+
 #logo i{
     color: #E94E77;
 }
@@ -75,12 +90,10 @@ nav {
     font-size: 2rem;
 }
 main{
-    padding-top: 104 px;
+    margin-top: 57 px;
 }
 
 footer{
-    
-}
-.invisible{
-    
+    position: absolute;
+    margin-bottom: 0;
 }
