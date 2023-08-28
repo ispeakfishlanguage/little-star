@@ -6,8 +6,19 @@
     box-sizing: border-box;
 }
 
-h1,
-a,
-button {
-    color: #4A90E2
+body{
+    font-family: 'Lato', sans-serif;
+    color: #6B6B6B;
 }
+header{
+    background-color: aqua;
+}
+
+main{
+    background-color: palevioletred;
+}
+
+footer{
+    background-color: yellow;
+}
+
