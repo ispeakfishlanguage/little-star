@@ -8,29 +8,44 @@
 }
 
 /*General styling*/
-body{
-    font-family: 'Lato', sans-serif;
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
     color: #6B6B6B;
+    font-family: 'Lato', sans-serif;
 }
 
-h1, 
+h1,
 h2,
-h3{
+h3 {
     font-family: 'Crafty Girls', cursive;
+    color: #FAF3E0;
+    /* Soft Cream */
 }
-h1{
-    font-size: 130%;
+
+h1 {
+    font-size: 20px;
+    /* Base size for mobile views */
+    color: #FAF3E0;
+    /* Soft Cream */
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 10px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
-.invisible{
+
+.invisible {
     display: none;
 }
 
-.soft-cream{
+.soft-cream {
     color: #FAF3E0;
 }
 
 /*Header styling*/
-header{
+header {
     background-color: #4A90E2;
     padding: 0 1rem;
     position: fixed;
@@ -42,12 +57,12 @@ header{
     align-items: baseline;
 }
 
-header a{
+header a {
     text-decoration: none;
     color: #FAF3E0;
 }
 
-header a:hover{
+header a:hover {
     color: #F5C542;
 }
 
@@ -61,8 +76,13 @@ header a:hover{
     margin-bottom: 1em;
 }
 
-#logo i{
+#logo {
+    letter-spacing: 4px;
+}
+
+#star-symbol {
     color: #E94E77;
+    /* Rosy Pink for the star */
 }
 
 /* Navbar style with dropdown toggle (credit: CI Love Running)*/
@@ -88,12 +108,51 @@ nav {
 
 .nav-toggle-label {
     font-size: 2rem;
-}
-main{
-    margin-top: 57 px;
+    padding-top: 10px;
 }
 
-footer{
-    position: absolute;
-    margin-bottom: 0;
+/*Main content styling*/
+main {
+    /* Make main element take up any surplus space to push footer down */
+    flex: 1 0 auto;
+    /* Add margin at the top to prevent content from being covered by the header */
+    margin-top: 56px;
+    /* Enable flex properties for child elements */
+    display: flex;
+    flex-direction: column;
+}
+
+/*footer styling (credit: CI Love Running)*/
+
+footer {
+    background-color: #A2D39C;
+}
+
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #E94E77;
+}
+
+
+/* Adjusting for tablets or larger mobile devices */
+@media (min-width: 480px) {
+    #logo {
+        font-size: 40px;
+    }
+}
+
+/* Adjusting for desktop views */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 48px;
+    }
 }
