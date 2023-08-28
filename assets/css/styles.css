@@ -7,15 +7,15 @@
     box-sizing: border-box;
 }
 
-/*General styling*/
+/* General styling */
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 
     /* This ensures the container takes up the full viewport height. */
-    min-height: 100vh; 
-    
+    min-height: 100vh;
+
     /* Generic project styles */
     color: #6B6B6B;
     font-family: 'Lato', sans-serif;
@@ -32,7 +32,7 @@ h3 {
 h1 {
     /* Base size for mobile views */
     font-size: 2rem;
-    
+
     letter-spacing: 1px;
     margin: 0;
     padding: 10px 0;
@@ -47,14 +47,14 @@ h1 {
     color: #FAF3E0;
 }
 
-/*Header styling*/
+/* Header styling */
 header {
     background-color: #4A90E2;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a;
+    box-shadow: 0 2px 2px #6B6B6B;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -67,7 +67,7 @@ header a {
 
 #navbar {
     font-size: 100%;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     list-style-type: none;
 }
 
@@ -96,7 +96,7 @@ nav {
     top: 100%;
 }
 
-/*Collapsible menu for mobile (credit: CI Love Running)*/
+/* Collapsible menu for mobile (credit: CI Love Running) */
 #nav-toggle:checked~nav {
     display: block;
 }
@@ -110,20 +110,40 @@ nav {
     padding-top: 10px;
 }
 
-/*Main content styling*/
+/* Main content styling */
 main {
-    /* Make main element take up any surplus space to push footer down */
+    /* Make main element push footer down */
     flex: 1 0 auto;
-    
-    /* Add margin at the top to prevent content from being covered by the header */
+
+    /* Margin at the top to prevent content from being covered by the header */
     margin-top: 62px;
-    
+
     /* Enable flex properties for child elements */
     display: flex;
     flex-direction: column;
 }
+/* Hero section */
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url('https://adambeckcouncil.ca/wp-content/uploads/2020/11/60-607558_dance-royalty-free-clip-art-kids-dancing-vector.png') no-repeat center center/cover;
+}
 
-/*footer styling (credit: CI Love Running)*/
+#cover-text {
+    background-color: #E94E77;
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* footer styling (credit: CI Love Running) */
 
 footer {
     background-color: #A2D39C;
@@ -146,7 +166,8 @@ footer {
 
 /* Adjusting for tablets or larger mobile devices */
 @media (min-width: 480px) {
-    /*Head styling*/
+
+    /* Head styling */
     nav {
         display: block;
         position: relative;
@@ -168,11 +189,12 @@ footer {
     .nav-toggle-label {
         display: none;
     }
-    
+
     #logo {
         font-size: 2.5rem;
     }
-    main{
+
+    main {
         margin-top: 78px;
     }
 }
@@ -182,10 +204,12 @@ footer {
     h1 {
         font-size: 3rem;
     }
+
     header a:hover {
         color: #F5C542;
     }
+
     #social-networks i:hover {
         color: #FAF3E0;
-}
+    }
 }
