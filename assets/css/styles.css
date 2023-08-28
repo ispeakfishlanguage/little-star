@@ -48,14 +48,16 @@ h3 {
     background-color: #E94E77;
     border: none;
     border-radius: 15px;
-    box-shadow: 0 9px #6B6B6B;
+    box-shadow: 0 5px #6B6B6B;
+
 }
 
 
 
 .join-button:active {
     background-color: #A2D39C;
-    box-shadow: 0 5px #6B6B6B;
+    color: #E94E77;
+    box-shadow: 0 2px #6B6B6B;
     transform: translateY(4px);
 }
 
@@ -154,23 +156,21 @@ nav {
     transform: translate(-50%, -50%);
 }
 
-
-/*#cover-text {
-    background-color: #E94E7788;
-    font-size: 130%;
-    position: absolute;
-    bottom: 30px;
-    width: 80%;
-    min-height: 200px;
-    padding-top: 40px;
-    padding-left: 10px;
-    text-shadow: 2px 2px 4px #6B6B6B 50%;
-} */
 #about-us{
-
+    background-color: #F7F7F7;
+    padding: 5% 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 #about-us:target ~ nav {
     display: block;
+}
+#about-us div{
+    justify-content: center;
+    display: block;
+    margin: auto;
 }
 
 #circle-cover-bg {
@@ -232,10 +232,6 @@ footer {
 
     #logo {
         font-size: 200%;
-    }
-
-    main {
-        margin-top: 78px;
     }
 }
 
