@@ -32,6 +32,10 @@ h3 {
 .soft-cream {
     color: #FAF3E0;
 }
+.rosy-pink {
+    /* Rosy Pink */
+    color: #E94E77;
+}
 
 
 /* Styling for the join button*/
@@ -82,7 +86,7 @@ main {
     flex: 1 0 auto;
 
     /* Margin at the top to prevent content from being covered by the header */
-    margin-top: 62px;
+    margin-top: 0;
 
     /* Enable flex properties for child elements */
     display: flex;
@@ -130,10 +134,6 @@ nav {
     letter-spacing: 4px;
 }
 
-#star-symbol {
-    /* Rosy Pink for the star */
-    color: #E94E77;
-}
 
 /* Hero section */
 #hero {
@@ -166,8 +166,21 @@ nav {
     padding-left: 10px;
     text-shadow: 2px 2px 4px #6B6B6B 50%;
 } */
+#about-us{
+
+}
 #about-us:target ~ nav {
     display: block;
+}
+
+#circle-cover-bg {
+    background: url(../images/circle-cover-bg.png) no-repeat top center / cover;
+    width: 90vw;
+    height: 90vw;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
 }
 
 /* footer styling */
