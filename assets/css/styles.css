@@ -9,12 +9,8 @@
 
 /* General styling */
 body {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
-
-    /* This ensures the container takes up the full viewport height. */
-    min-height: 100vh;
 
     /* Generic project styles */
     color: #6B6B6B;
@@ -45,6 +41,16 @@ h1 {
 
 .soft-cream {
     color: #FAF3E0;
+}
+
+/* Styling for the join button*/
+.join-button {
+    border-radius: 2px;
+    background-color: #E94E77;
+    color: #FAF3E0;
+    font-size: 100%;
+    margin-top: 20px;
+    padding: 15px 32px;
 }
 
 /* Header styling */
@@ -130,7 +136,7 @@ main {
 }
 
 #cover-text {
-    background-color: #E94E77;
+    background-color: #E94E7788;
     font-size: 130%;
     position: absolute;
     bottom: 30px;
@@ -138,12 +144,12 @@ main {
     min-height: 200px;
     padding-top: 40px;
     padding-left: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px #6B6B6B 50%;
 }
 
 
 
-/* footer styling (credit: CI Love Running) */
+/* footer styling */
 
 footer {
     background-color: #A2D39C;
