@@ -26,10 +26,9 @@ h3 {
 }
 
 h1 {
-    font-size: 20px;
     /* Base size for mobile views */
-    color: #FAF3E0;
-    /* Soft Cream */
+    font-size: 2rem;
+    
     letter-spacing: 1px;
     margin: 0;
     padding: 10px 0;
@@ -60,10 +59,6 @@ header {
 header a {
     text-decoration: none;
     color: #FAF3E0;
-}
-
-header a:hover {
-    color: #F5C542;
 }
 
 #navbar {
@@ -97,7 +92,7 @@ nav {
     top: 100%;
 }
 
-/*Nav toggle (credit: CI Love Running)*/
+/*Collapsible menu for mobile (credit: CI Love Running)*/
 #nav-toggle:checked~nav {
     display: block;
 }
@@ -115,8 +110,10 @@ nav {
 main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
+    
     /* Add margin at the top to prevent content from being covered by the header */
-    margin-top: 56px;
+    margin-top: 62px;
+    
     /* Enable flex properties for child elements */
     display: flex;
     flex-direction: column;
@@ -145,6 +142,29 @@ footer {
 
 /* Adjusting for tablets or larger mobile devices */
 @media (min-width: 480px) {
+    /*Head styling*/
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #navbar {
+        display: flex;
+        letter-spacing: 1px;
+        font-family: 'Crafty Girls', cursive;
+    }
+
+    #navbar>li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+    
     #logo {
         font-size: 40px;
     }
@@ -155,4 +175,10 @@ footer {
     h1 {
         font-size: 48px;
     }
+    header a:hover {
+        color: #F5C542;
+    }
+    #social-networks i:hover {
+        color: #FAF3E0;
+}
 }
