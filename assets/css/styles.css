@@ -1,37 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Lato:wght@300&family=Pacifico&display=swap');
 
+/* Asterisk selector: override default styles set by the browser*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.soft-cream{
-    color: #FAF3E0;
-}
 
+/*General styling*/
 body{
     font-family: 'Lato', sans-serif;
     color: #6B6B6B;
 }
+
 h1, 
 h2,
 h3{
     font-family: 'Pacifico', cursive;
 }
+.invisible{
+    display: none;
+}
+
+.soft-cream{
+    color: #FAF3E0;
+}
+
+/*Header styling*/
 header{
     background-color: #4A90E2;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header a:hover{
+    color: #F5C542;
 }
 #logo i{
     color: #E94E77;
 }
-#nav-toggle{
-    color: 
+
+/* Navbar style with dropdown toggle (credit: CI Love Running)*/
+nav {
+    position: absolute;
+    background-color: #4A90E2;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+}
+
+/*Nav toggle (credit: CI Love Running)*/
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
 }
 main{
-    
+    padding-top: 104 px;
 }
 
 footer{
     
 }
-
+.invisible{
+    
+}
