@@ -12,6 +12,10 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+
+    /* This ensures the container takes up the full viewport height. */
+    min-height: 100vh; 
+    
     /* Generic project styles */
     color: #6B6B6B;
     font-family: 'Lato', sans-serif;
@@ -166,14 +170,17 @@ footer {
     }
     
     #logo {
-        font-size: 40px;
+        font-size: 2.5rem;
+    }
+    main{
+        margin-top: 78px;
     }
 }
 
 /* Adjusting for desktop views */
 @media (min-width: 768px) {
     h1 {
-        font-size: 48px;
+        font-size: 3rem;
     }
     header a:hover {
         color: #F5C542;
