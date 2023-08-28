@@ -15,24 +15,14 @@ body {
     /* Generic project styles */
     color: #6B6B6B;
     font-family: 'Lato', sans-serif;
+
+    height: 100%;
 }
 
 h1,
 h2,
 h3 {
     font-family: 'Crafty Girls', cursive;
-    color: #FAF3E0;
-    /* Soft Cream */
-}
-
-h1 {
-    /* Base size for mobile views */
-    font-size: 2rem;
-
-    letter-spacing: 1px;
-    margin: 0;
-    padding: 10px 0;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .invisible {
@@ -43,15 +33,28 @@ h1 {
     color: #FAF3E0;
 }
 
+
 /* Styling for the join button*/
 .join-button {
-    border-radius: 2px;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
     background-color: #E94E77;
-    color: #FAF3E0;
-    font-size: 100%;
-    margin-top: 20px;
-    padding: 15px 32px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #6B6B6B;
 }
+
+
+
+.join-button:active {
+    background-color: #A2D39C;
+    box-shadow: 0 5px #6B6B6B;
+    transform: translateY(4px);
+}
+
 
 /* Header styling */
 header {
@@ -64,11 +67,38 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    display: none;
 }
 
 header a {
     text-decoration: none;
-    color: #FAF3E0;
+}
+
+
+/* Main content styling */
+main {
+
+    /* Make main element push footer down */
+    flex: 1 0 auto;
+
+    /* Margin at the top to prevent content from being covered by the header */
+    margin-top: 62px;
+
+    /* Enable flex properties for child elements */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar style with dropdown toggle */
+nav {
+    position: absolute;
+    background-color: #4A90E2;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
 }
 
 #navbar {
@@ -81,28 +111,8 @@ header a {
     margin-bottom: 1em;
 }
 
-#logo {
-    letter-spacing: 4px;
-}
 
-#star-symbol {
-    color: #E94E77;
-    /* Rosy Pink for the star */
-}
-
-/* Navbar style with dropdown toggle (credit: CI Love Running)*/
-nav {
-    position: absolute;
-    background-color: #4A90E2;
-    width: 100%;
-    left: 0;
-    padding: 0 1rem;
-    box-shadow: 0 2px 2px #3a3a3a;
-    display: none;
-    top: 100%;
-}
-
-/* Collapsible menu for mobile (credit: CI Love Running) */
+/* Collapsible menu for mobile */
 #nav-toggle:checked~nav {
     display: block;
 }
@@ -116,26 +126,36 @@ nav {
     padding-top: 10px;
 }
 
-/* Main content styling */
-main {
-    /* Make main element push footer down */
-    flex: 1 0 auto;
-
-    /* Margin at the top to prevent content from being covered by the header */
-    margin-top: 62px;
-
-    /* Enable flex properties for child elements */
-    display: flex;
-    flex-direction: column;
+#logo {
+    letter-spacing: 4px;
 }
+
+#star-symbol {
+    /* Rosy Pink for the star */
+    color: #E94E77;
+}
+
 /* Hero section */
 #hero {
     height: 600px;
     width: 100%;
-    background: url('https://adambeckcouncil.ca/wp-content/uploads/2020/11/60-607558_dance-royalty-free-clip-art-kids-dancing-vector.png') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url("../images/hero-image.png") no-repeat center center/cover;
+    position: relative;
 }
 
-#cover-text {
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*#cover-text {
     background-color: #E94E7788;
     font-size: 130%;
     position: absolute;
@@ -145,9 +165,10 @@ main {
     padding-top: 40px;
     padding-left: 10px;
     text-shadow: 2px 2px 4px #6B6B6B 50%;
+} */
+#about-us:target ~ nav {
+    display: block;
 }
-
-
 
 /* footer styling */
 
@@ -197,7 +218,7 @@ footer {
     }
 
     #logo {
-        font-size: 2.5rem;
+        font-size: 200%;
     }
 
     main {
@@ -208,7 +229,7 @@ footer {
 /* Adjusting for desktop views */
 @media (min-width: 768px) {
     h1 {
-        font-size: 3rem;
+        font-size: 300%;
     }
 
     header a:hover {
