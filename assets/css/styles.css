@@ -5,16 +5,28 @@
     margin: 0;
     box-sizing: border-box;
 }
+.soft-cream{
+    color: #FAF3E0;
+}
 
 body{
     font-family: 'Lato', sans-serif;
     color: #6B6B6B;
 }
-header{
-    
+h1, 
+h2,
+h3{
+    font-family: 'Pacifico', cursive;
 }
-
-
+header{
+    background-color: #4A90E2;
+}
+#logo i{
+    color: #E94E77;
+}
+#nav-toggle{
+    color: 
+}
 main{
     
 }
