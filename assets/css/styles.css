@@ -142,7 +142,7 @@ nav {
     height: 600px;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url("../images/nieohnemeinenconsultant_Picture_a_kindergarten_music_session_in_c6947130-6c2f-478c-b005-d9e4898cac72.png") no-repeat center center/cover;
+                url("../images/hero-image.png") no-repeat center center/cover;
     position: relative;
 }
 
@@ -157,7 +157,7 @@ nav {
 }
 
 #about-us{
-    background-color: #F7F7F7;
+    background-color: #FAF3E0;
     padding: 5% 10%;
     display: flex;
     flex-wrap: wrap;
@@ -166,7 +166,7 @@ nav {
 }
 
 #about-us-intro {
-    background-color: #F7F7F7; /* or any other contrasting or complementary color */
+    background-color: #FAF3E0; 
     padding: 4% 8%;
     text-align: center;
 }
@@ -200,7 +200,7 @@ nav {
 }
 
 #classes {
-    background-color: #EFEFEF; /* or any other contrasting color to distinguish the section */
+    background-color: #FAF3E0; 
     padding: 4% 8%;
 }
 
@@ -215,12 +215,22 @@ nav {
     margin-bottom: 1rem;
 }
 
-.class {
-    background-color: #FFFFFF;
-    padding: 2%;
-    border-radius: 8px;
+#classes .class {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 1.5rem;
 }
+
+.class-image img {
+    width: 30%;
+    border-radius: 8px;
+}
+
+.class-info {
+    width: 65%;
+}
+
 
 .class h3 {
     font-size: 1.6rem;

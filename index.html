@@ -58,7 +58,9 @@
                     <h1 id="club-name">Little <i class="fa-solid fa-star rosy-pink"></i> Stars</h1>
                     <p>Dance, Sing, Shine - Always Free, Forever Fun!</p>
                     <div></div>
-                    <button class="join-button soft-cream"><h3>Join now!</h3></button>
+                    <button class="join-button soft-cream">
+                        <h3>Join now!</h3>
+                    </button>
                 </div>
             </div>
         </section>
@@ -68,66 +70,140 @@
         <section id="about-us">
             <div id="about-us-intro">
                 <h2 class="rosy-pink">Welcome to Little Stars!</h2>
-                <p>We are a dancing and singing club for kids aged 3 to 5, funded by the 
+                <p>We are a dancing and singing club for kids aged 3 to 5, funded by the
                     municipality of the city of Stockholm.</p>
-                <p>Discover our story, learn about our commitment to the arts, and see why 
+                <p>Discover our story, learn about our commitment to the arts, and see why
                     Little Stars is the perfect place for your little one.</p>
             </div>
             <div id="circle-cover-bg">
             </div>
             <div>
-                <p>At <strong>Little Stars</strong>, we see the potential in every child. 
-                    Dancing and singing aren't just activities; they're paths to confidence, 
+                <p>At <strong>Little Stars</strong>, we see the potential in every child.
+                    Dancing and singing aren't just activities; they're paths to confidence,
                     discipline, and lasting memories.</p>
             </div>
             <div>
-                <p>Because we deeply value children and the arts, <strong>Little Stars</strong> 
-                    is completely free. We believe that every young talent should have a stage, 
+                <p>Because we deeply value children and the arts, <strong>Little Stars</strong>
+                    is completely free. We believe that every young talent should have a stage,
                     without any cost.</p>
             </div>
             <div>
-                <p>Our club isn't just about the arts; it's a pledge for a brighter future — 
+                <p>Our club isn't just about the arts; it's a pledge for a brighter future —
                     always free, forever fun.</p>
             </div>
             <div><img src="" alt=""></div>
             <div><img src="" alt=""></div>
             <div><img src="" alt=""></div>
-            
-            
+
+
         </section>
-        
+
 
 
         <!--Our Classes section-->
         <section id="classes">
             <h2>Our Classes</h2>
-            <p>Each class at Little Stars is carefully tailored to meet the energetic and imaginative needs of our tiny dancers and singers. We warmly invite parents and grandparents to be a part of this joyful journey!</p>
-            
+            <p>Each class at Little Stars is carefully tailored to meet the energetic and imaginative needs of our tiny
+                dancers and singers. We warmly invite parents and grandparents to be a part of this joyful journey!</p>
+
             <div class="class">
-                <h3>For Age 3</h3>
-                <p>Perfectly designed for the youngest of our stars, this class introduces them to basic rhythms and movements, sparking their creativity. <strong>Weekdays: 4pm - 5pm</strong></p>
+                <div class="class-image">
+                    <img src="assets/images/class-age3.png" alt="Class for Age 3">
+                </div>
+
+                <div class="class-info">
+                    <h3>For Age 3</h3>
+                    <p>Perfectly designed for the youngest of our stars,
+                        this class introduces them to basic rhythms and movements, sparking their
+                        creativity.
+                        <strong>Weekdays: 4pm - 5pm</strong>
+                    </p>
+                </div>
             </div>
-            
+
             <div class="class">
-                <h3>For Age 4</h3>
-                <p>Building on foundational skills, our 4-year-old stars delve deeper into dance routines and start vocal training. <strong>Weekdays: 5pm - 6pm</strong></p>
+                <div class="class-image">
+                    <img src="assets/images/class-age4.png" alt="Class for Age 4">
+                </div>
+
+                <div class="class-info">
+                    <h3>For Age 4</h3>
+                    <p>Building on foundational skills, our 4-year-old stars delve deeper 
+                        into dance routines and start vocal training. 
+                        <strong>Weekdays: 5pm - 6pm</strong>
+                    </p>
+                </div>
             </div>
-        
+
             <div class="class">
-                <h3>For Age 5</h3>
-                <p>For our eldest stars, this class offers advanced routines and vocal lessons, nurturing their growing talents. <strong>Weekdays: 6pm - 7pm</strong></p>
+                <div class="class-image">
+                    <img src="assets/images/class-age5.png" alt="Class for Age 5">
+                </div>
+                <div class="class-info">
+                    <h3>For Age 5</h3>
+                    <p>For our eldest stars, this class offers advanced routines and vocal lessons, 
+                        nurturing their growing talents. 
+                    <strong>Weekdays: 6pm - 7pm</strong>
+                    </p>
+                </div>
             </div>
-        
-            <p class="note">Note: Parents and grandparents are encouraged to participate and support their little stars during classes.</p>
+
+            <p class="note">Note: Parents and grandparents are encouraged to participate and support their little stars
+                during classes.</p>
         </section>
-        
+
 
         <!--Join now section-->
-        <section id="join-now"></section>
+        <section id="join-now">
+            <h2>Join Us Now</h2>
+            <p>At Little Stars, we're committed to making our classes accessible to every child. You'll never have to pay for any class, ever!</p>
+        
+            <form action="https://formdump.codeinstitute.net" method="post">
+                <!-- Child's Name -->
+                <div class="form-group">
+                    <label for="childName">Child's Name *</label>
+                    <input type="text" id="childName" name="childName" required>
+                </div>
+        
+                <!-- Age Selector -->
+                <div class="form-group">
+                    <label for="childAge">Child's Age</label>
+                    <select id="childAge" name="childAge">
+                        <option value="3">3 years old</option>
+                        <option value="4">4 years old</option>
+                        <option value="5">5 years old</option>
+                    </select>
+                </div>
+        
+                <!-- Parent's Name -->
+                <div class="form-group">
+                    <label for="parentName">Your Name</label>
+                    <input type="text" id="parentName" name="parentName">
+                </div>
+        
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Your Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+        
+                <!-- Phone Number -->
+                <div class="form-group">
+                    <label for="phone">Your Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+        
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <input type="submit" value="Tell me more!">
+                </div>
+            </form>
+        </section>
+        
     </main>
 
 
-    <!--Footer (code credit: CI Love Running)-->
+    <!--Footer-->
     <footer>
         <ul id="social-networks">
             <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
