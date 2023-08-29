@@ -190,7 +190,7 @@ nav {
 }
 
 #circle-cover-bg {
-    background: url(../images/circle-cover-bg.png) no-repeat top center / cover;
+    background: url('../images/circle-cover-bg.png') no-repeat top center / cover;
     width: 90vw;
     height: 90vw;
     margin-bottom: 20px;
@@ -242,6 +242,39 @@ nav {
     font-style: italic;
     margin-top: 2rem;
 }
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input[type="text"], 
+.form-group input[type="email"], 
+.form-group input[type="tel"],
+.form-group select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #FAF3E0;
+    border-radius: 5px;
+}
+
+.form-group input[type="submit"] {
+    background-color: #4A90E2;
+    color: #FAF3E0;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #4A90E2;
+}
+
 
 /* footer styling */
 
