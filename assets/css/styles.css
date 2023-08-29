@@ -142,7 +142,7 @@ nav {
     height: 600px;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url("../images/hero-image.png") no-repeat center center/cover;
+                url("../images/nieohnemeinenconsultant_Picture_a_kindergarten_music_session_in_c6947130-6c2f-478c-b005-d9e4898cac72.png") no-repeat center center/cover;
     position: relative;
 }
 
@@ -164,6 +164,22 @@ nav {
     justify-content: center;
     align-items: center;
 }
+
+#about-us-intro {
+    background-color: #F7F7F7; /* or any other contrasting or complementary color */
+    padding: 4% 8%;
+    text-align: center;
+}
+
+#about-us-intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about-us-intro p {
+    font-size: 1.2rem;
+}
+
 #about-us:target ~ nav {
     display: block;
 }
@@ -181,6 +197,40 @@ nav {
     border-radius: 50%;
     max-width: 300px;
     max-height: 300px;
+}
+
+#classes {
+    background-color: #EFEFEF; /* or any other contrasting color to distinguish the section */
+    padding: 4% 8%;
+}
+
+#classes h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+#classes p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.class {
+    background-color: #FFFFFF;
+    padding: 2%;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.class h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+}
+
+.note {
+    text-align: center;
+    font-style: italic;
+    margin-top: 2rem;
 }
 
 /* footer styling */
