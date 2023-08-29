@@ -194,20 +194,16 @@ nav {
 
 #classes h2 {
     text-align: center;
-    font-size: 2.2rem;
-    margin-bottom: 1.5rem;
 }
 
 #classes p {
-    font-size: 1.1rem;
     margin-bottom: 1rem;
 }
 
-#classes .class {
+#classes {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 1.5rem;
 }
 
 .class-image img {
@@ -267,10 +263,7 @@ nav {
     margin-bottom: 0.5rem;
 }
 
-.form-group input[type="text"], 
-.form-group input[type="email"], 
-.form-group input[type="tel"],
-.form-group select {
+.form-group input {
     width: 100%;
     padding: 0.5rem;
     border: 1px solid #FAF3E0;

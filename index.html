@@ -160,29 +160,26 @@
                 <form action="https://formdump.codeinstitute.net" method="post">
                     <!-- Child's Name -->
                     <div class="form-group">
-                        <label for="childName">Child's Name *</label>
+                        <label for="childName">Child's Name </label>
                         <input type="text" id="childName" name="childName" required>
                     </div>
 
                     <!-- Age Selector -->
                     <div class="form-group">
                         <label for="childAge">Child's Age</label>
-                        <select id="childAge" name="childAge">
-                            <option value="3">3 years old</option>
-                            <option value="4">4 years old</option>
-                            <option value="5">5 years old</option>
-                        </select>
+                        <input id="childAge" name="childAge" type="number" min="3" max="5" required>
+                        </input>
                     </div>
 
                     <!-- Parent's Name -->
                     <div class="form-group">
                         <label for="parentName">Your Name</label>
-                        <input type="text" id="parentName" name="parentName">
+                        <input type="text" id="parentName" name="parentName" required>
                     </div>
 
                     <!-- Email -->
                     <div class="form-group">
-                        <label for="email">Your Email *</label>
+                        <label for="email">Your Email </label>
                         <input type="email" id="email" name="email" required>
                     </div>
 
