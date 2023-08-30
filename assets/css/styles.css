@@ -26,6 +26,10 @@ h4 {
     font-family: 'Crafty Girls', cursive;
 }
 
+section{
+    margin-top: auto;
+}
+
 .hidden-header {
     display: none;
 }
@@ -75,7 +79,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    display: none;
+    display: flex;
 }
 
 header a {
@@ -115,18 +119,18 @@ nav {
     left: 0;
     padding: 0 1rem;
     box-shadow: 0 2px 2px #6B6B6B;
-    display: none;
+    display: block;
     top: 100%;
 }
 
 
 /* Collapsible menu for mobile */
 #nav-toggle:checked~nav {
-    display: block;
+    display: none;
 }
 
 #nav-toggle {
-    display: block;
+    display: none;
 }
 
 .nav-toggle-label {
@@ -183,6 +187,15 @@ nav {
     border-radius: 50%;
     max-width: 300px;
     max-height: 300px;
+}
+
+/*Gallery Page*/
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+#photos {
+    line-height: 0;
 }
 
 
@@ -323,7 +336,15 @@ footer {
     }
 }
 
-/* Adjusting for desktop views */
+/* Adjusting for large or landscape phones (576px and up)*/
+@media screen and (min-width:576px) {
+    #photos{
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
+/* Adjusting for desktop views (768px and up) */
 @media (min-width: 768px) {
     h1 {
         font-size: 300%;
@@ -337,7 +358,68 @@ footer {
         color: #F5C542;
     }
 
+    /* About us section*/
+    #benefits,
+    #ethos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #benefits-physical>div,
+    #benefits-mental>div {
+        width: 75%;
+    }
+
+    #ethos {
+        text-align: end;
+        align-self: flex-end;
+    }
+
+
+    #photos{
+        column-count: 2;
+    }
+
     #social-networks i:hover {
         color: #FAF3E0;
+    }
+}
+
+/* Larger devices (992px and up) */
+@media screen and (min-width:992px) {
+    
+    #photos{
+        column-count: 4;
+    }
+}
+
+
+/* Widescreens 1200px and up*/
+@media screen and (min-width: 1200px) {    
+    /* Reasons section */
+    #about-us {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #about-us > div {
+        flex: 1;
+    }
+
+    #circle-cover-bg {
+        order: 0
+    }
+
+    #ethos {
+        order: 1;
+    }
+
+    #benefits{
+        align-self: flex-start;
+    }
+
+    #ethos {
+        align-self: flex-end;
     }
 }
