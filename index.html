@@ -21,14 +21,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
     <!--Stylesheet-->
-    <link rel="stylesheet" href="assets\css\styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
     <!--Header-->
     <header>
         <!--Logo-->
-        <a href="#home" class="soft-cream">
+        <a href="#hero" class="soft-cream">
             <h1 id="logo"><i class="fa-solid fa-star rosy-pink"></i></h1>
         </a>
 
@@ -37,9 +37,10 @@
         <label for="nav-toggle" class="nav-toggle-label soft-cream">
             <i class="fa-solid fa-bars"></i>
         </label>
-        <nav>
-            <ul id="navbar" class="soft-cream">
-                <li><a href="#home">Home</a></li>
+        <!--Navigation bar-->
+        <nav class="soft-cream">
+            <ul id="navbar">
+                <li><a href="#hero">Home</a></li>
                 <li><a href="#about-us">About Us</a></li>
                 <li><a href="#classes">Our Classes</a></li>
                 <li><a href="#join-now">Join now!</a></li>
@@ -58,7 +59,7 @@
                     <h1 id="club-name">Little <i class="fa-solid fa-star rosy-pink"></i> Stars</h1>
                     <p>Dance, Sing, Shine - Always Free, Forever Fun!</p>
                     <div></div>
-                    <button class="join-button soft-cream">
+                    <button class="join-button soft-cream" href="#join-now">
                         <h3>Join now!</h3>
                     </button>
                 </div>
@@ -76,48 +77,45 @@
                 <p>Learn about our commitment to the arts, and see why
                     Little Stars is the perfect place for your little one.</p>
             </div>
-            <div id="circle-cover-bg">
-            </div>
-            <div id="benefits">
-                <p>At <strong>Little Stars</strong>, we see the potential in every child.
-                    Dancing and singing aren't just activities; they're paths to confidence,
-                    discipline, and lasting memories.</p>
-            </div>
-            <div id="ethos">
-                <p>Because we deeply value children and the arts, <strong>Little Stars</strong>
-                    is completely free. We believe that every young talent should have a stage,
-                    without any cost.</p>
+            <div id="about-us-middle">
+                <div id="circle-cover-bg">
+                </div>
+                <div id="benefits">
+                    <p>At <strong>Little Stars</strong>, we see the potential in every child.
+                        Dancing and singing aren't just activities; they're paths to confidence,
+                        discipline, and lasting memories.</p>
+                </div>
+                <div id="ethos">
+                    <p>Because we deeply value children and the arts, <strong>Little Stars</strong>
+                        is completely free. We believe that every young talent should have a stage,
+                        without any cost.</p>
+                </div>
             </div>
             <div id="about-us-outro">
                 <p>Our club isn't just about the arts; it's a pledge for a brighter future —
                     always free, forever fun.</p>
             </div>
+        </section>
+        <section id="gallery">
+            <h2 class="hidden-header">Gallery</h2>
 
-            <section id="gallery">
-                <h2 class="hidden-header">Gallery</h2>
+            <div id="photos">
+                <img src="assets/images/gallery1.png"
+                    alt="Little girl sitting on the floor smiling with other kids sitting in the background">
 
-                <div id="photos">
-                    <img src="assets/images/gallery1.png"
-                    alt="Little girl sitting on the floor smiling with other kids in the background">
+                <img src="assets/images/gallery2.png" alt="Little kids smiling and dancing">
 
-                    <img src="assets/images/gallery2.png" 
-                    alt="Little kids smiling and dancing">
+                <img src="assets/images/gallery3.png" alt="Adults dancing together with kids">
 
-                    <img src="assets/images/gallery3.png" 
-                    alt="Adults dancing together with kids">
+                <img src="assets/images/gallery4.png" alt="Three kids on stage with colorful clothing, smiling">
 
-                    <img src="assets/images/gallery4.png" 
-                    alt="Adults dancing together with kids">
+                <img src="assets/images/gallery5.png" alt="Kids from the public looking at a show and smiling">
 
-                    <img src="assets/images/gallery5.png" 
-                    alt="Adults dancing together with kids">
+                <img src="assets/images/gallery6.png" alt="Toddlers walking on the stage in superhero costumes">
+            </div>
 
-                    <img src="assets/images/gallery6.png" 
-                    alt="Adults dancing together with kids">
-                </div>
+        </section>
 
-            </section>
-            
         </section>
 
 
@@ -169,17 +167,18 @@
                     </p>
                 </div>
             </div>
-            <div class="note"><p>Note: Parents and grandparents are encouraged to participate and support their little stars
-                during classes.</p>
+            <div class="note">
+                <p>Note: Parents and grandparents are encouraged to participate and support their little stars
+                    during classes.</p>
             </div>
         </section>
 
 
         <!--Join now section-->
         <section id="join-now">
-            <h2 class="rosy-pink">Join Us Now</h2>
-            <p>You'll never have to pay for any class, ever!</p>
-            <div class="join-us-form" id="form-container">
+            <div class="join-us-form soft-cream" id="form-container">
+                <h2 class="rosy-pink">Join Us Now</h2>
+                <p>You'll never have to pay for any class, ever!</p>
                 <form action="https://formdump.codeinstitute.net" method="post">
                     <!-- Child's Name -->
                     <div class="form-group">
@@ -227,6 +226,8 @@
 
     <!--Footer-->
     <footer>
+
+        <!--Social media links-->
         <ul id="social-networks">
             <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
                     aria-label="Visit our Facebook page (opens in a new tab)">
@@ -251,6 +252,7 @@
                 </a>
             </li>
         </ul>
+        <!--Address section-->
     </footer>
 </body>
 

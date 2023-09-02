@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Lato:wght@300&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Lato:wght@300&display=swap');
 
 /* Asterisk selector: override default styles set by the browser*/
 * {
@@ -15,8 +15,6 @@ body {
     /* Generic project styles */
     color: #6B6B6B;
     font-family: 'Lato', sans-serif;
-
-    height: 100%;
 }
 
 h1,
@@ -26,24 +24,21 @@ h4 {
     font-family: 'Crafty Girls', cursive;
 }
 
-section{
-    margin-top: auto;
-}
-
 .hidden-header {
     display: none;
 }
 
+
+/*Used font colors*/
 .soft-cream {
     color: #FAF3E0;
 }
 .rosy-pink {
-    /* Rosy Pink */
     color: #E94E77;
 }
 
 
-/* Styling for the join button*/
+/* Styling for the buttons*/
 .join-button {
     margin-top: 20px; 
     padding: 15px 25px;
@@ -94,7 +89,7 @@ main {
     flex: 1 0 auto;
 
     /* Margin at the top to prevent content from being covered by the header */
-    margin-top: 0;
+    margin-top: 60;
 
     /* Enable flex properties for child elements */
     display: flex;
@@ -163,21 +158,7 @@ nav {
 }
 
 
-/*about us section*/
-#about-us{
-    background-color: #FAF3E0;
-    padding: 5% 10%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
 
-#about-us div{
-    justify-content: center;
-    display: block;
-    margin: auto;
-}
 
 #circle-cover-bg {
     background: url('../images/circle-cover-bg.png') no-repeat top center / cover;
@@ -187,6 +168,7 @@ nav {
     border-radius: 50%;
     max-width: 300px;
     max-height: 300px;
+    margin: 20px;
 }
 
 /*Gallery Page*/
@@ -240,10 +222,11 @@ nav {
     margin-top: 2rem;
 }
 
-#join-us{
+#join-now{
     height: 600px;
     width: 100%;
-    background: url("../images/join-us-bg.png") no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+                url("../images/join-us-bg.png") no-repeat center center/cover;
     position: relative;
 }
 
@@ -358,29 +341,26 @@ footer {
         color: #F5C542;
     }
 
-    /* About us section*/
-    #benefits,
-    #ethos {
+    #about-us-middle {
         display: flex;
-        flex-direction: column;
-        width: 100%;
+        justify-content: space-between;  /* Distributes items evenly with equal space around them */
+        align-items: center;  /* Vertically center aligns the items in the middle */
+        flex-wrap: nowrap;  /* Ensures the children won't wrap to the next line */
     }
-
-    #benefits-physical>div,
-    #benefits-mental>div {
-        width: 75%;
+    
+    /* You can adjust the width of each inner div if necessary */
+    #circle-cover-bg, #benefits, #ethos {
+        flex: 1;  /* Takes equal space for each item */
+        margin: 0 10px;  /* Example spacing between the items */
     }
+    
 
-    #ethos {
-        text-align: end;
-        align-self: flex-end;
-    }
-
-
+    /*Gallery Section*/
     #photos{
         column-count: 2;
     }
 
+    /*Footer*/
     #social-networks i:hover {
         color: #FAF3E0;
     }
@@ -398,7 +378,7 @@ footer {
 /* Widescreens 1200px and up*/
 @media screen and (min-width: 1200px) {    
     /* Reasons section */
-    #about-us {
+    /*#about-us {
         display: flex;
         flex-direction: row;
     }
@@ -422,4 +402,4 @@ footer {
     #ethos {
         align-self: flex-end;
     }
-}
+}*/
