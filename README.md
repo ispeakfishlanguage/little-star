@@ -2,8 +2,37 @@
 Little Star Performance Club - Portfolio project #1
 
 Little Stars is a site that hopes to promote the "Little Stars" performance club organized by the municipality of Stockholm. The site will be targeted toward the parents of children aged 3 to 5 year of age and living in Stockholm. Little Stars will be useful for parents to see exactly what times and days their kids would be able to participate in the club activities.
+# Table of Contents
+- [Little Stars Performance Club](#little-star)
+- [Table of Contents](#table-of-contents)
+  - [Demo](#demo)
+    - [A live demo to the website can be found here](#a-live-demo-to-the-website-can-be-found-here)
+  - [UX](#ux)
+  - [User stories](#user-stories)
+    - [Strategy](#strategy)
+    - [Scope](#scope)
+    - [Structure](#structure)
+    - [Skeleton](#skeleton)
+    - [Surface](#surface)
+  - [Technologies](#technologies)
+  - [Features](#features)
+    - [Existing Features](#existing-features)
+    - [Features Left to Implement](#features-left-to-implement)
+  - [Testing](#testing)
+    - [Validator Testing](#validator-testing)
+    - [Bugs](#bugs)
+  - [Deployment](#deployment)
+  - [Credits](#credits)
+    - [Content](#content)
+    - [Media](#media)
+    - [Acknowledgements](#acknowledgements)
+![Responsive Mockup](https://github.com/ispeakfishlang/Documentation/Imagges/Little-stars-mockup.png)
 
-![Responsive Mockup](https://github.com/lucyrush/readme-template/blob/master/media/love_running_mockup.png)
+## Demo
+
+![Website look on different devices](Documentation/Images/Little-stars-mockup.png)
+
+### A live demo to the website can be found [here](https://ispeakfishlanguage.github.io/little-star/)
 
 ## Features 
 ### Existing Features
@@ -18,7 +47,7 @@ Little Stars is a site that hopes to promote the "Little Stars" performance club
 - __The landing page image__
 
   - The landing includes a photograph with text overlay to allow the user to see exactly what the club offers and puts a lot of emphasis on the facts that the classes are free. 
-  - This section introduces the user to Little Star with an eye-catching photograpy 
+  - This section introduces the user to Little Star with an eye-catching photography and descriptional text related to the content of the website. 
 ![Landing Page](https://github.com/lucyrush/readme-template/blob/master/media/love_running_landing.png)
 
 - __About Us Section__
@@ -37,7 +66,7 @@ Little Stars is a site that hopes to promote the "Little Stars" performance club
 
 - __The Footer__ 
 
-  - The footer section includes links to the relevant social media sites for Little Stars Performance Club. The links will open to a new tab to allow easy navigation for the user. The footer includes the address where the club is located, the contact nuber in a clickable link that will make it easier for the user to directly call from the webpage, as well as an embedded map.
+  - The footer section includes links to the relevant social media sites for Little Stars Performance Club. The links will open to a new tab to allow easy navigation for the user. The footer includes the address where the club is located, the contact number in a clickable link that will make it easier for the user to directly call from the webpage, as well as an embedded map.
   - The footer is valuable to the user as it encourages them to keep connected via social media, and helps them locate the club exactly.
 
 ![Footer](https://github.com/lucyrush/readme-template/blob/master/media/love_running_footer.png)
@@ -51,7 +80,7 @@ Little Stars is a site that hopes to promote the "Little Stars" performance club
 
 - __The Join Now Page__
 
-  - This page will allow the user to get in contact with the Little Stars performance club to start their kids personal journey with the performing arts. The user will be able specify their child's as well as their own information, and some channel to reach to them with more information personalised to just their situation. The user will be asked to submit their full name, telephone number and email address, as well as their child's name and age. 
+  - This page will allow the user to get in contact with the Little Stars performance club to start their kids personal journey with the performing arts. The user will be able specify their child's as well as their own information, and some channel to reach to them with more information personalized to just their situation. The user will be asked to submit their full name, telephone number and email address, as well as their child's name and age. 
 
 ![Sign Up](https://github.com/lucyrush/readme-template/blob/master/media/love_running_signup.png)
 

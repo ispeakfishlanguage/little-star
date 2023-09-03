@@ -165,7 +165,6 @@ nav {
 #hero {
     height: 600px;
     width: 100%;
-    height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url("../images/hero-image.webp") no-repeat center center/cover;
     position: relative;
@@ -204,7 +203,7 @@ nav {
 
 #about-us-middle{
     justify-content: space-around;
-    padding: auto 10px;
+    padding: 10px;
 }
 
 #benefits,
