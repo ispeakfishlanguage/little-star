@@ -49,18 +49,29 @@ h4 {
     outline: none;
     background-color: #E94E77;
     border: none;
+    color: #FAF3E0;
+    text-decoration: none;
+    font-family: 'Crafty Girls', cursive;
     border-radius: 15px;
     box-shadow: 0 5px #6B6B6B;
-
 }
 
+.join-button a {
+    color: #FAF3E0;
+    text-decoration: none;
+    font-family: 'Crafty Girls', cursive;
+}
 
 
 .join-button:active {
     background-color: #A2D39C;
-    color: #E94E77;
     box-shadow: 0 2px #6B6B6B;
     transform: translateY(4px);
+    color: #E94E77;
+}
+
+.join-button:active a {
+    color: #E94E77;
 }
 
 
@@ -91,7 +102,7 @@ main {
     flex: 1 0 auto;
 
     /* Margin at the top to prevent content from being covered by the header */
-    margin-top: 60;
+    margin-top: 60px;
 
     /* Enable flex properties for child elements */
     display: flex;
@@ -166,7 +177,7 @@ nav {
     margin: 20px auto;
 }
 
-#about-us h2 {
+#about-us h1 {
     margin-bottom: 20px;
     text-align: center;
     font-size: 280%;
@@ -217,6 +228,15 @@ nav {
 
 
 /*Classes section*/
+#classes {
+    background-color: #FAF3E0;
+    padding: 4% 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
 #classes-info {
     display: flex;
     flex-direction: column;
@@ -225,14 +245,17 @@ nav {
 .class {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px; /* For spacing between classes */
+    margin-bottom: 20px;
+    /* Optional: For spacing between classes */
 }
 
-.class-image, .class-info {
+.class-image,
+.class-info {
     width: 100%;
     box-sizing: border-box;
 }
-#classes h2 {
+
+#classes h1 {
     text-align: center;
 }
 
@@ -250,7 +273,7 @@ nav {
 }
 
 
-.class h3 {
+.class h2 {
     font-size: 1.6rem;
     margin-bottom: 0.8rem;
 }
@@ -453,6 +476,22 @@ footer {
         column-count: 3;
     }
 
+    #classes-info {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .class {
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+
+    .class-image,
+    .class-info {
+        width: 45%;
+    }
+
+
     /*Footer*/
     #social-networks i:hover {
         color: #4A90E2;
@@ -460,27 +499,28 @@ footer {
 
     #address {
         display: flex;
-        flex-direction: row; 
+        flex-direction: row;
         align-items: start;
         width: 100%;
     }
-    
+
     #address-text {
         flex: 0 1 20%;
         padding-right: 20px;
     }
-    
+
     #address-map {
         flex: 0 1 80%;
     }
-    
 }
+
 
 /* Larger devices (992px and up) */
 @media screen and (min-width:992px) {
+
     /* More columns on the gallery */
     #photos {
-        column-count: 4;
+        column-count: 8;
     }
 }
 

@@ -28,7 +28,7 @@
     <!--Header-->
     <header>
         <!--Logo-->
-        <a href="#hero" class="soft-cream" aria-labelledby="#navbar">
+        <a href="#hero" class="soft-cream" aria-labelledby="#home-link">
             <h1 id="logo"><i class="fa-solid fa-star rosy-pink"></i></h1>
         </a>
 
@@ -40,7 +40,7 @@
         <!--Navigation bar-->
         <nav>
             <ul id="navbar">
-                <li><a href="#hero" aria-label="Link to the top of the page (opens in the same window)">Home</a>
+                <li><a id="home-link" href="#hero" aria-label="Link to the top of the page (opens in the same window)">Home</a>
                 </li>
                 <li><a href="#about-us" aria-label="Link to the 'About us' section (opens in the same window)">About
                         Us</a>
@@ -68,10 +68,10 @@
                     <h1 id="club-name">Little <i class="fa-solid fa-star rosy-pink"></i> Stars</h1>
                     <p>Dance, Sing, Shine - Always Free, Forever Fun!</p>
                     <div></div>
-                    <a href="#join-now"><button class="join-button soft-cream">
-                            <h3>Join now!</h3>
+                    <button class="join-button soft-cream"><a href="#join-now">
+                            Join now!</a>
                         </button>
-                    </a>
+                    
                 </div>
             </div>
         </section>
@@ -79,7 +79,7 @@
 
         <!--About Us section-->
         <section id="about-us">
-            <h2 class="hidden-header">About us</h2>
+            <div><h2 class="hidden-header">About us</h2></div>
             <h2 class="rosy-pink">Welcome to Little Stars!</h2>
             <div id="about-us-intro">
                 <p>We are a dancing and singing club for kids aged 3 to 5, funded by the
@@ -132,7 +132,7 @@
 
         <!--Our Classes section-->
         <section id="classes">
-            <h1 class="rosy-pink">Our Classes</h1>
+            <h2 class="rosy-pink">Our Classes</h2>
             <div id="classes-intro">
                 <p>Each class at Little Stars is carefully tailored to meet the energetic and imaginative
                     needs of our tiny dancers and singers. We warmly invite parents and grandparents
@@ -230,8 +230,7 @@
 
                     <!-- Submit Button -->
                     <div class="form-group">
-                        <button class="join-button soft-cream" type="submit">
-                            <h4>Tell me more</h4>
+                        <button class="join-button soft-cream" type="submit">Tell me more
                         </button>
                     </div>
                 </form>
@@ -271,7 +270,7 @@
         </ul>
         <!--Address section-->
 
-        <h1 class="rosy-pink">Find us here:</h1>
+        <h2 class="rosy-pink">Find us here:</h2>
         <div id="address">
             <div id="address-text">
                 <p>Stockholms Stadshus
@@ -285,7 +284,7 @@
             <div id="address-map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19361.870922310056!2d18.053304381255998!3d59.33018546521131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77df92d37939%3A0x57ccc561599e77a2!2sStockholms%20Stadshus%2C%20Hantverkargatan%201%2C%20112%2021%20Stockholm!5e0!3m2!1ssv!2sse!4v1693650386400!5m2!1ssv!2sse"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    referrerpolicy="no-referrer-when-downgrade" aria-label="Map to our address"></iframe>
             </div>
         </div>
     </footer>
