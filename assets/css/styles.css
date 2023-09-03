@@ -7,16 +7,23 @@
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
 /* General styling */
 body {
     display: flex;
     flex-direction: column;
 
     /* Generic project styles */
-    color: #3a3a3a;
+    color: #6B6B6B;
     font-family: 'Lato', sans-serif;
 }
-section{
+
+section {
     margin: 20px;
 }
 
@@ -80,7 +87,7 @@ h4 {
 
 /* Header styling */
 header {
-    background-color: #4A90E2;
+    background-color: #A2D39C;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
@@ -94,7 +101,7 @@ header {
 
 header a {
     text-decoration: none;
-    color: #FAF3E0;
+    color: #E94E77;
 }
 
 
@@ -125,7 +132,7 @@ main {
 /* Navbar style with dropdown toggle */
 nav {
     position: absolute;
-    background-color: #4A90E2;
+    background-color: #A2D39C;
     width: 100%;
     left: 0;
     padding: 0 1rem;
@@ -160,10 +167,9 @@ nav {
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("../images/hero-image.png") no-repeat center center/cover;
+        url("../images/hero-image.webp") no-repeat center center/cover;
     position: relative;
 }
-
 
 /* Place text in the middle of the image */
 .hero-text {
@@ -174,16 +180,26 @@ nav {
     transform: translate(-50%, -50%);
 }
 
-/* About us style*/
+/*About Us section*/
 #about-us {
     width: 90%;
     margin: 20px auto;
+    justify-content: space-between;
 }
 
-#about-us h1 {
+#about-us h2 {
     margin-bottom: 20px;
     text-align: center;
     font-size: 280%;
+}
+
+#about-us>p {
+    text-align: center;
+}
+
+#about-us-intro{
+    justify-content: center;
+    width: 100%;
 }
 
 #benefits,
@@ -192,17 +208,8 @@ nav {
     line-height: 20px;
 }
 
-#about-us-middle p {
-    padding: 0 20px;
-}
-
-#about-us-middle hr {
-    border-top: 1px solid #3a3a3a;
-    margin: 5px 0;
-}
-
 #circle-cover-bg {
-    background: url('../images/about-us-img.png') no-repeat top center / cover;
+    background: url('../images/about-us-img.webp') no-repeat top center / cover;
     width: 90vw;
     height: 90vw;
     margin-bottom: 20px;
@@ -290,7 +297,7 @@ nav {
 #join-now {
     height: 600px;
     width: 100%;
-    background: url("../images/join-us-bg.png") no-repeat center center/cover;
+    background: url("../images/join-us-bg.webp") no-repeat center center/cover;
     display: flex;
     position: relative;
     justify-content: center;
@@ -450,7 +457,7 @@ footer {
     }
 
     header a:hover {
-        color: #F5C542;
+        color: #4A90E2;
     }
 
 
