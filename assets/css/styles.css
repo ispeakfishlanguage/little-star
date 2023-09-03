@@ -13,7 +13,7 @@ body {
     flex-direction: column;
 
     /* Generic project styles */
-    color: #6B6B6B;
+    color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
 
@@ -217,15 +217,21 @@ nav {
 
 
 /*Classes section*/
-#classes {
-    background-color: #FAF3E0;
-    padding: 4% 8%;
+#classes-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
 }
 
+.class {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* For spacing between classes */
+}
+
+.class-image, .class-info {
+    width: 100%;
+    box-sizing: border-box;
+}
 #classes h2 {
     text-align: center;
 }
