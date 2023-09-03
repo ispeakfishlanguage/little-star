@@ -16,6 +16,9 @@ body {
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
+section{
+    margin: 20px;
+}
 
 h1,
 h2,
@@ -520,7 +523,7 @@ footer {
 
     /* More columns on the gallery */
     #photos {
-        column-count: 8;
+        column-count: 4;
     }
 }
 
