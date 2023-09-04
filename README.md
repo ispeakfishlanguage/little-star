@@ -19,6 +19,7 @@ Little Stars is a site that hopes to promote the "Little Stars" performance club
     - [Existing Features](#existing-features)
     - [Features Left to Implement](#features-left-to-implement)
   - [Testing](#testing)
+    - [Accessibility](#accessibility)  
     - [Validator Testing](#validator-testing)
     - [Bugs](#bugs)
   - [Deployment](#deployment)
@@ -156,6 +157,11 @@ _Main color palette_
 * The text adapts in width to accommodate smaller o larger screens, always taking up the width available.
 * There are no broken links on the page
 
+### Accessibility
+Icons with ARIA labels: To ensure that screen readers can understand the content.
+Images with 'alt'-text: To help users with visual impairments understand what the images are about.
+Contrast Requirements: The use of easy colors and easy to read and see elements.
+Dyslexia/Accessible Friendly Fonts: The font used is easy to read.
 
 ### Validator Testing 
 
