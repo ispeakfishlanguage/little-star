@@ -57,7 +57,7 @@ This website's goal is to showcase the classes and what benefits it could bring 
 For the users (parents and grandparents), the focus was on giving them a good overview of what the club's ethos is about, focusing on the benefits they could get as well as reminding them the classes are free. This way, the users can get a better idea of what activities to expect, how the club can help them and the children, as well as what applies to their specific situation through the contact form. The design was kept simple and linear, with only one page for ease of navigation and use.
 
 ### Structure
-I followed the traditional CV framework since it is not overly complicated and it will be easy for the users to find the information they are looking for. The Online CV website has a single, long, scrolling page design. My structure features a fixed top navigation that connects the user to each of the sections from anywhere on the page. I have also included a link at the end of the navigation to download a copy of the traditional CV if the user likes that format.
+I followed the traditional printed flyer layout, since it is not overly complicated and it will be easy for the users to find the information they are looking for. The website has a single, long, scrolling page design. My structure features a fixed top navigation that connects the user to each of the sections from anywhere on the page. I have also included a link at the end of the navigation to connect to the social media of the club and even the physical address and phone number.
 
 **Website Sections:**
 1. **_Home / Landing page:_** A concise introduction to the club.
@@ -203,3 +203,4 @@ The live link can be found here - [Little Stars](https://ispeakfishlanguage.gith
 - Daniel Ahlberg for helping me debug some of the initial issues I encounter after deploying the website, as well as all the help writing my readme file, and choosing images.
 - Lucas Lindström for checking through my code and coming up with suggestions as to what could be improved in the technical aspect.
 - OpenAI's Chat GPT for helping me debug some of the major issues.
+- The core structure for the READme file was inspired by Anjalee Kulasinghe Online CV readme.
