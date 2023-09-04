@@ -20,28 +20,31 @@
     <!--Favicon on the corner of the tab-->
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+
     <!--Stylesheet-->
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!--Fontawesome icon pack-->
+    <script src="https://kit.fontawesome.com/d7b9028a81.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!--Header-->
     <header>
         <!--Logo-->
-        <a href="#hero" aria-labelledby="#home-link">
-            <h1 id="logo"><i class="fa-solid fa-star rosy-pink"></i></h1>
+        <a href="#hero" aria-label="">
+            <i class="fa-solid fa-star rosy-pink"></i>
         </a>
 
         <!--Navbar toggle menu-->
-        <input type="checkbox" id="nav-toggle" name="nav-toggle" unchecked>
+        <input type="checkbox" id="nav-toggle" name="nav-toggle">
         <label for="nav-toggle" class="nav-toggle-label rosy-pink" aria-label="Menu button (opens in the same window)">
             <i class="fa-solid fa-bars"></i>
         </label>
         <!--Navigation bar-->
         <nav>
             <ul id="navbar">
-                <li><a id="home-link" href="#hero"
-                        aria-label="Link to the top of the page (opens in the same window)">Home</a>
+                <li><a href="#hero" aria-label="Link to the top of the page (opens in the same window)">Home</a>
                 </li>
                 <li><a href="#about-us" aria-label="Link to the 'About us' section (opens in the same window)">About
                         Us</a>
@@ -69,11 +72,10 @@
                     <h1 id="club-name">Little <i class="fa-solid fa-star rosy-pink"></i> Stars</h1>
                     <p>Letting preschool kids dance, sing, and shine in Stockholm</p>
                     <p>Always Free, Forever Fun!</p>
-                    <div></div>
-                    <button type="button" onclick="location.href='#join-now';" class="join-button soft-cream"
-                        value="Join now!">
-                    </button>
-
+                </div>
+                <div>
+                    <button type="button" onclick="location.href='#join-now';" class="join-button soft-cream">Join
+                        now!</button>
                 </div>
             </div>
         </section>
@@ -232,7 +234,6 @@
                     <div class="form-group">
                         <label for="childAge">Child's Age</label>
                         <input id="childAge" name="childAge" type="number" min="3" max="5" required>
-                        </input>
                     </div>
 
                     <!-- Parent's Name -->
@@ -315,7 +316,7 @@
     </footer>
 </body>
 
-<!--Fontawesome icon pack-->
+
 <script src="https://kit.fontawesome.com/d7b9028a81.js" crossorigin="anonymous"></script>
 
 
