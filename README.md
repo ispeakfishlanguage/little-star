@@ -30,7 +30,7 @@ Little Stars is a site that hopes to promote the "Little Stars" performance club
 
 ## Demo
 
-![Website look on different devices](./Documentation/Imagges/little-stars-mockup.png)
+![Website look on different devices](./Documentation/Images/little-stars-mockup.png)
 
 ### A live demo to the website can be found [here](https://ispeakfishlanguage.github.io/little-star/)
 
